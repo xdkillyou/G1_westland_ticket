@@ -1,0 +1,54 @@
+@import 'base/reset';
+@import 'base/var';
+@import 'mixins/mixin';
+@import 'animation/animation';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/activity';
+@import 'pages/team';
+@import 'pages/ticket';
+@import 'pages/information';
+@import 'pages/items';
+@import 'pages/shopcar';
+@import 'pages/member';
+// ==========================================
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.btn{
+    @include btn
+}
+.btn--active{
+    @include btn_active
+}
+.center{
+    margin: 0 auto;
+}
+
+
+
+// ==================RWD======================
+@include rwd(desktop){
+    .section_title{
+        @include section_title;
+    }
+    .page_title{
+        @include page_title;
+    }
+}
+
+@include rwd(phone){
+    .section_title{
+        @include section_titleM;
+    }
+    .page_title{
+        @include page_titleM;
+    }
+}
