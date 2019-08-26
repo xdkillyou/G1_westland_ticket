@@ -322,10 +322,10 @@ a {
 }
 
 .section_footer {
-  background-image: url("../images/footer/footer_bottom.png");
-  background-position: bottom;
+  background-image: url("../images/footer/footer_gbi.png");
+  background-position: center 20%;
   background-size: cover;
-  padding-bottom: 0px;
+  background-repeat: no-repeat;
 }
 
 .section_footer .footer_copyright {
@@ -340,7 +340,7 @@ a {
 .section_footer .footer_social img {
   width: 40px;
   height: 40px;
-  margin: 0 15px 10px;
+  margin: 15px 10px;
 }
 
 @media all and (min-width: 768px) {
@@ -355,12 +355,10 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    outline: solid 1px #f00;
   }
   .ticket_customize .ticket_customize_wrap {
     margin: 0 20px;
     width: 45%;
-    outline: solid 1px #f00;
   }
   .ticket_customize_wrap .customize_items {
     width: 90%;
@@ -411,6 +409,7 @@ a {
     margin: 0 auto;
   }
   .customize_mascot img {
+    height: 272px;
     padding: 50px 20px 0;
     width: 60%;
     display: block;
@@ -517,6 +516,7 @@ a {
   .customize_backimage .ticket_picture {
     width: 300px;
     height: 300px;
+    margin-bottom: 20px;
   }
   .ticket_amount {
     width: 300px;
@@ -557,8 +557,11 @@ a {
     width: 190px;
     height: 190px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 0px;
+  }
+  .customize_backimage .ticket_customize_sub .customize_sub {
+    width: 100%;
   }
   .ticket_news_wrap {
     background-image: url(../images/background/ticket_news.svg);
