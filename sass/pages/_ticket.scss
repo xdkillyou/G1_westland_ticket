@@ -1,8 +1,9 @@
+*{
+    outline: solid 1px #f00;
+}
+
 @include rwd(desktop){
-    // *{
-    //     outline: solid 1px #f00;
-    // }
-    body{
+    .ticket_page{
         background-image: url("/images/background/bgi.svg");
         background-size: cover;
     }
@@ -18,6 +19,7 @@
             // outline: solid 1px #f00;
         }
     }
+    //
     .ticket_customize_wrap{
         .customize_items{
             width: 90%;
@@ -277,5 +279,8 @@
 }
 
 @include rwd(phone){
-    
+    .ticket_page{
+        background-image: url("/images/background/bgiM.svg");
+        background-size: cover;
+    }
 }

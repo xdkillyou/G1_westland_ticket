@@ -155,6 +155,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 10px;
+    margin: 0 auto 40px;
   }
   .header_navbar .navbar_container a {
     position: relative;
@@ -343,8 +344,12 @@ a {
   margin: 15px 10px;
 }
 
+* {
+  outline: solid 1px #f00;
+}
+
 @media all and (min-width: 768px) {
-  body {
+  .ticket_page {
     background-image: url("/images/background/bgi.svg");
     background-size: cover;
   }
@@ -610,6 +615,13 @@ a {
   }
 }
 
+@media all and (max-width: 767px) {
+  .ticket_page {
+    background-image: url("/images/background/bgiM.svg");
+    background-size: cover;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -693,7 +705,7 @@ a {
     line-height: 40px;
     letter-spacing: 0.8px;
     font-weight: 400;
-    margin: auto;
+    margin: 0 auto 20px;
     text-align: center;
   }
   .page_title {
@@ -706,7 +718,7 @@ a {
     line-height: 40px;
     letter-spacing: 0.8px;
     font-weight: 400;
-    margin: auto;
+    margin: 0 auto 20px;
     text-align: center;
   }
 }
