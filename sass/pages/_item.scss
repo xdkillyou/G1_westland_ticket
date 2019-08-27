@@ -1,8 +1,67 @@
-// *{
-//     outline: solid 1px #f00;
-// }
+*{
+    outline: solid 1px #f00;
+}
 //共用
-
+// 麵包屑
+.item_bread_crumbs{
+    display: flex;
+    padding: 10px 0;
+    outline: solid 1px #f00;
+    li{
+        a{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        &::after{
+            content: ">";
+            display: inline-block;
+        }
+    }
+    li:last-child{
+        &::after{
+            display: none;
+        }
+    }
+}
+// 右半部商品資訊
+.item_intro_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .item_intro_title{
+        padding: 10px;
+        outline: solid 1px #f00;
+        font-size: 30px;
+        font-weight: map-get( $fonts_weight_map , lv2 );
+        color: map-get( $colors_map , font_base );
+    }
+    .item_intro_box{
+        outline: solid 1px #f00;
+        display: flex;
+        margin: 15px 0;
+        .intro_box_title{
+            width: 10%;
+            font-size: 20px;    
+            padding: 10px;
+            outline: solid 1px #f00;
+        }
+        .intro_box_text,.item_price,.item_lave{
+            padding: 12px;
+            font-size: 18px;
+            width: 90%;
+        }
+    }
+    .item_intro_totalprice{
+        // outline: solid 1px #f00;
+        text-align: right;
+        margin: 15px 0;
+        padding: 20px;
+        font-size: 28px;
+        .intro_totalprice{
+            color: #c00;
+        }
+    }
+}
 
 
 @include rwd(desktop){
@@ -15,26 +74,12 @@
     }
     // 麵包屑
     .item_bread_crumbs{
-        display: flex;
-        // outline: solid 1px #f00;
-        padding: 10px 0;
         li{
             a{
-                display: inline-block;
                 font-size: 22px;
-                margin: 0 10px;
-                // outline: solid 1px #f00;
             }
             &::after{
-                content: ">";
-                display: inline-block;
                 font-size: 22px;
-                // outline: solid 1px #f00;
-            }
-        }
-        li:last-child{
-            &::after{
-                display: none;
             }
         }
     }
@@ -55,30 +100,32 @@
             }
         }
     }
-    // 右半部商品圖片
+    // 右半部商品資訊
     .item_intro_wrap{
         display: flex;
         flex-direction: column;
         justify-content: center;
         .item_intro_title{
             padding: 10px;
-            // outline: solid 1px #f00;
+            outline: solid 1px #f00;
             font-size: 30px;
             font-weight: map-get( $fonts_weight_map , lv2 );
             color: map-get( $colors_map , font_base );
         }
         .item_intro_box{
-            // outline: solid 1px #f00;
+            outline: solid 1px #f00;
             display: flex;
             margin: 15px 0;
             .intro_box_title{
+                width: 10%;
                 font-size: 20px;    
                 padding: 10px;
-                // outline: solid 1px #f00;
+                outline: solid 1px #f00;
             }
             .intro_box_text,.item_price,.item_lave{
                 padding: 12px;
                 font-size: 18px;
+                width: 90%;
             }
         }
         .item_intro_totalprice{
@@ -131,5 +178,14 @@
 
 
 @include rwd(phone){
+    .item_page{
+        background-image: url("/images/background/bgiM.svg");
+        background-repeat: no-repeat;
+        // background-size: 100%;
+        background-size: cover;
+    }
+    .item_intro_wrap{
+        width: 90%;
+    }
     
 }
