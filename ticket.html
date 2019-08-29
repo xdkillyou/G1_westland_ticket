@@ -7,6 +7,8 @@
     <title>ticket_page</title>
     <link rel="stylesheet" href="sass/style.css">
     <script src="https://kit.fontawesome.com/6a6d2775fc.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    
 </head>
 <body class="ticket_page">
 
@@ -70,8 +72,8 @@
                 </div>
                 <!-- 客製吉祥物大圖 -->
                 <div class="customize_mascot_role">
-                    <div class="customize_mascot">
-                        <img src="images/cusitems/role1.svg" alt="吉祥物本人">
+                    <div class="customize_mascot" >
+                        <img id="big" src="images/cusitems/role1.svg" alt="吉祥物本人">
                     </div>
                     <div class="customize_items_set_box">
                         <ul class="customize_items_set">
@@ -96,22 +98,22 @@
                 <!-- 選擇吉祥物長相 -->
                 <ul class="customize_mascots_box">
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small1.png" alt="吉祥物一">
+                        <img class="mascots" src="images/cusitems/role_small1.png" alt="吉祥物一">
                     </li>
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small2.png" alt="吉祥物二">
+                        <img class="mascots" src="images/cusitems/role_small2.png" alt="吉祥物二">
                     </li>
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small3.png" alt="吉祥物三">
+                        <img class="mascots" src="images/cusitems/role_small3.png" alt="吉祥物三">
                     </li>
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small4.png" alt="吉祥物四">
+                        <img class="mascots" src="images/cusitems/role_small4.png" alt="吉祥物四">
                     </li>
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small5.png" alt="吉祥物五">
+                        <img class="mascots" src="images/cusitems/role_small5.png" alt="吉祥物五">
                     </li>
                     <li class="customize_mascots">
-                        <img src="images/cusitems/role_small6.png" alt="吉祥物六">
+                        <img class="mascots" src="images/cusitems/role_small6.png" alt="吉祥物六">
                     </li>
                 </ul>
                 <!-- 客製確認鈕 -->
@@ -180,6 +182,6 @@
                 Copyright &copy; 2019 West Land Inc. 
         </p>
     </footer>
-    
+    <script src="ticket_page.js"></script>
 </body>
 </html>
